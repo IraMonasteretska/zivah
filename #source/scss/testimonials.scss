@@ -1,0 +1,238 @@
+.resfscr__text.ttm {
+    p {
+        max-width: 770px;
+    }
+}
+
+.testimonials-container {
+    padding: 100px 0 100px;
+}
+
+.testimonials-container .col-lg-6 {
+    margin-bottom: 20px;
+
+    .testimonialbox {
+        height: 100%;
+    }
+}
+
+.tstslidersect {
+    padding-bottom: 100px;
+
+    .slick-slide {
+        padding: 20px;
+    }
+
+    .slick-prev {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 0;
+        right: initial;
+        background: url('../img/services/slarrleft.svg') no-repeat center / 100%;
+        width: 35px;
+        height: 35px;
+        border: none;
+        z-index: 3;
+    }
+
+    .slick-next {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0;
+        left: initial;
+        background: url('../img/services/slarrright.svg') no-repeat center / 100%;
+        width: 35px;
+        height: 35px;
+        border: none;
+        z-index: 3;
+    }
+
+
+}
+
+.ttmslide {
+    max-width: 1191px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 20px rgba(0, 46, 80, 0.11);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    align-items: center;
+
+    .ttmslide__img {
+        flex: 0 0 auto;
+        width: 206px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .ttmslide__info {
+        flex: 0 0 auto;
+        width: calc(100% - 206px);
+        padding-left: 55px;
+
+        .descr {
+            max-width: 784px;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 23px;
+
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .author {
+            padding-left: 47px;
+            position: relative;
+            color: #002E50;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 130%;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 32px;
+                height: 1px;
+                background: #004A80;
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+}
+
+.testimonialsmore {
+    padding: 110px 0 130px;
+
+    .testimonialbox {
+        background: #fff;
+    }
+
+    .whitebutton {
+        display: inline-block;
+        margin-top: 60px;
+        width: 260px;
+    }
+
+    .col-lg-4 {
+        margin-bottom: 20px;
+
+        .testimonialbox {
+            height: 100%;
+        }
+    }
+}
+
+
+
+
+@media(max-width:1399.8px) {
+    .ttmslide {
+        max-width: 1000px;
+    }
+
+    .testimonialsmore {
+        padding: 100px 0;
+    }
+}
+
+@media(max-width:991.8px) {
+    .resfscr {
+        padding-bottom: 70px;
+    }
+
+    .testimonials-container,
+    .testimonialsmore {
+        padding: 70px 0;
+    }
+
+    .ttmslide {
+        padding: 30px;
+    }
+
+    .ttmslide .ttmslide__info {
+        padding-left: 25px;
+    }
+
+    .ttmslide {
+        max-width: calc(100% - 40px);
+    }
+
+    .tstslidersect {
+        padding-bottom: 50px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .ttmslide .ttmslide__img {
+        margin: 0 auto 20px;
+        width: 160px;
+    }
+
+    .ttmslide .ttmslide__info {
+        width: 100%;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .testimonials-container,
+    .testimonialsmore {
+        padding: 50px 0;
+    }
+
+    .testimonialbox__header .testimonialbox__name .userimg {
+        width: 42px;
+        height: 42px;
+    }
+
+    .testimonialbox__header .testimonialbox__name .username {
+        font-size: 16px;
+    }
+
+    .testimonialbox__body {
+        padding: 20px 16px;
+    }
+
+    .ttmslide .ttmslide__info {
+        padding-left: 0;
+    }
+
+    .ttmslide {
+        padding: 10px 15px;
+    }
+
+    .testimonialsmore .whitebutton {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:360.8px) {
+    .ttmslide .ttmslide__info .descr {
+        font-size: 14px;
+    }
+
+    .ttmslide {
+        max-width: 100%;
+    }
+}

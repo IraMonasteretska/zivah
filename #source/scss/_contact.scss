@@ -1,0 +1,251 @@
+.contact {
+    padding: 100px 0 160px;
+}
+
+.contact__title {
+    margin: 0 auto 76px;
+    max-width: 950px;
+
+    h1 {
+        font-size: 38px;
+    }
+}
+
+.contact__inner {
+    width: 100%;
+    height: 540px;
+    display: flex;
+    box-shadow: 0px 1px 30px rgba(0, 46, 80, 0.1);
+}
+
+.contact__inner-left {
+    font-family: 'Poppins', sans-serif;
+    width: 35%;
+    padding: 55px 41px;
+    background: #F5F8FB;
+
+    h2 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 140%;
+        text-align: center;
+        color: #004A80;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #002E50;
+        margin-bottom: 50px;
+    }
+}
+
+.contact__box-row {
+    display: flex;
+    align-items: center;
+
+    &+& {
+        margin-top: 30px;
+    }
+
+    img {
+        height: 48px;
+        width: 48px;
+        background-size: cover;
+        margin-right: 20px;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 150%;
+        color: #032C49;
+        transition: .3s;
+
+        &:hover {
+            color: #ED4F00;
+        }
+    }
+}
+
+.contact__inner-right {
+    width: 65%;
+    padding: 65px 50px;
+    background: #FFFFFF;
+
+    form {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-row {
+        width: 100%;
+        margin-bottom: 30px;
+
+        label {
+            display: block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 21px;
+            margin-bottom: 15px;
+            color: #032B49;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            resize: none;
+            outline: none;
+            background: #FFFFFF;
+            border: 1px solid #004A80;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #004A80;
+            padding: 14px 20px;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+
+            &::placeholder {
+                color: #718594;
+                transition: .3s;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &:focus::placeholder {
+                opacity: 0;
+            }
+        }
+
+        textarea {
+            height: 115px;
+        }
+
+        &.twocol {
+            width: 47%;
+        }
+    }
+
+    button {
+        width: 260px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        background: #004A80;
+        border: 2px solid #004A80;
+        transition: .3s;
+
+        &:hover {
+            color: #004A80;
+            background: #fff;
+        }
+    }
+
+}
+
+@media(max-width:1599.8px) {
+    .contact__inner-right {
+        width: 60%;
+    }
+
+    .contact__inner-left {
+        width: 40%;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .contact__title h1 {
+        font-size: 30px;
+    }
+
+    .contact__inner-right {
+        width: 55%;
+    }
+
+    .contact__inner-left {
+        width: 45%;
+    }
+
+    .contact__inner {
+        height: 500px;
+    }
+}
+
+
+@media(max-width:991.8px) {
+    .contact__inner {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .contact__inner-right,
+    .contact__inner-left {
+        width: 100%;
+    }
+
+    .contact__title {
+        margin: 0px auto 60px;
+    }
+
+    .contact__title h1 {
+        font-size: 26px;
+    }
+
+    .contact {
+        padding: 80px 0 99px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .contact__title h1 {
+        font-size: 22px;
+    }
+
+    .contact__inner-left h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .contact__inner-left p {
+        margin-bottom: 35px;
+    }
+
+    .contact__box-row img {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+    }
+
+    .contact__box-row a {
+        font-size: 14px;
+    }
+
+    .contact__box-row+.contact__box-row {
+        margin-top: 20px;
+    }
+
+    .contact__inner-left {
+        padding: 40px 25px;
+    }
+
+    .contact__inner-right {
+        padding: 50px 30px;
+    }
+
+    .contact__inner-right .input-row.twocol {
+        width: 100%;
+    }
+    .contact {
+        padding: 60px 0 80px;
+    }
+}
